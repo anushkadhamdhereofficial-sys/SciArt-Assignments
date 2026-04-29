@@ -1,0 +1,18 @@
+Assignment 1 - ImageJ Particle Counter
+
+Image source: ImageJ sample images (Fluorescent Cells)
+Tool: Fiji (ImageJ)
+
+Steps followed:
+1. Opened sample image in Fiji
+2. Image → Type → 8-bit
+3. Process → Subtract Background → Rolling ball radius: 50
+4. Image → Adjust → Threshold → 50–255
+5. Process → Binary → Fill Holes
+6. Process → Binary → Watershed
+7. Analyze → Analyze Particles
+   - Size: 50–Infinity
+   - Circularity: 0.00–1.00
+8. Saved results as CSV
+
+Results: Multiple particles detected and counted using Fiji
